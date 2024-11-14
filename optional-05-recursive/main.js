@@ -10,8 +10,10 @@ console.log(`Faktorial dari ${numberForFactorial} adalah ${factorial(numberForFa
 
 const numberForFibonacci = 10;
 console.log(`Deret Fibonacci hingga elemen ${numberForFibonacci} adalah:`);
+let fibSequence = [];
 for (let i = 0; i <= numberForFibonacci; i++) {
-  console.log(fibonacci(i));
+  fibSequence.push(fibonacci(i));
+  console.log(`[ ${fibSequence.join(', ')} ]`);
 }
 
 /**
